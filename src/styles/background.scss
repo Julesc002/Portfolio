@@ -24,6 +24,7 @@ body {
   }
   
   .bubble {
+    z-index: -1;
     position: absolute;
     left: var(--bubble-left-offset);
     bottom: -75%;
