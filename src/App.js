@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Background from './components/Background';
+import Musique from './components/Musique';
 import Accueil from './pages/Accueil';
 import AccueilBis from './pages/AccueilBis';
 import CV from './pages/CV';
@@ -11,6 +12,7 @@ import Projets from './pages/Projets';
 const App = () => {
   return (
     <div className="background-content">
+      <Musique />
       <Routes>
         <Route path='/' element={<Accueil />} />
         <Route path='/feur' element={<AccueilBis />} />
