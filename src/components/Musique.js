@@ -6,6 +6,7 @@ import tunic2 from '../audio/tunic2.mp3';
 const Musique = () => {
     const location = useLocation();
     const [currentLocation, setCurrentLocation] = useState(location);
+    const [musicEnabled, setMusicEnabled] = useState(true);
     const executed = useRef(false);
     const audio1 = useRef(new Audio(tunic1));
     const audio2 = useRef(new Audio(tunic2));
@@ -62,9 +63,22 @@ const Musique = () => {
         //console.log("2 : " + audio2.current.volume);
     }, [location, currentLocation]);
 
+    const toggleMusic = () => {
+        if (musicEnabled) {
+            audio1.current.pause();
+            audio2.current.pause();
+        } else {
+            audio1.current.play();
+            audio2.current.play();
+        }
+        setMusicEnabled(!musicEnabled);
+    };
+
     return (
         <div>
-           
+            <button onClick={toggleMusic}>
+                {musicEnabled ? "Désactiver la musique" : "Activer la musique"}
+            </button>
         </div>
     );
 };
