@@ -17,15 +17,17 @@ body {
   }
   
   .background-content {
-      background: none;
-      position: relative;
-      z-index: 1;
-      overflow: hidden;
-      width: 100vw;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-  }
+    background: none;
+    position: relative;
+    z-index: 1;
+    overflow-y: auto; /* Défilement vertical */
+    overflow-x: hidden; /* Désactiver le défilement horizontal */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 
   .bubbles {
       position: absolute;
