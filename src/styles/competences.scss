@@ -1,0 +1,11 @@
+.containerCompetence {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.realiser, .optimiser, .collaborer, .gerer, .conduire, .administrer {
+    width: 30%;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}

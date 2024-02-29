@@ -1,4 +1,20 @@
-.image_ecocab, .image_wekingame {
-    width: 45%;
+.image_ecocab, .image_wekingame, .image_quidditch {
+    width: 90%;
     height: auto;
+}
+
+.containerProjet {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Ecocab, .Wekingame, .Quidditch {
+    width: 48%;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.Quidditch {
+    clear: both;
 }
