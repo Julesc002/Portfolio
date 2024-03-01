@@ -8,7 +8,7 @@ function Projets() {
     return (
         <div>
             <Header />
-            <h1>Projets</h1>
+            <h1>Mes projets</h1>
             <div className='containerProjet'>
                 <div className='Ecocab'>
                     <h3>Stage : Ecocab - Développement d'un MVP d'une application de covoiturage</h3>

@@ -4,3 +4,13 @@
 @use './Page_CV.scss';
 @use './Projets.scss';
 @use './competences.scss';
+@use './accueil.scss';
+@use './musique.scss';
+
+* {
+    font-family: "Fira Sans", Arial, sans-serif;
+}
+
+h1, h3, p {
+    text-align: center;
+}

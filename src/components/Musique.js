@@ -75,8 +75,8 @@ const Musique = () => {
     };
 
     return (
-        <div>
-            <button onClick={toggleMusic}>
+        <div className='btnContainer'>
+            <button className='btnSon' onClick={toggleMusic}>
                 {musicEnabled ? "Désactiver la musique" : "Activer la musique"}
             </button>
         </div>
